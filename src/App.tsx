@@ -1,35 +1,37 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useEffect } from "react"
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+import type { FC } from "react"
+import Navbar from "./components/nav"
+import Home from "./pages/Home"
+import FAQ from "./pages/FAQ"
+import Vendors from "./pages/Vendors"
+import Contact from "./pages/Contact"
 
-function App() {
-  const [count, setCount] = useState(0)
+const App: FC = () => {
+	useEffect(() => {
+		const script = document.createElement("script")
+		script.src = "https://cdn.tickettailor.com/js/widgets/min/widget.js"
+		script.async = true
+		document.body.appendChild(script)
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+		return () => {
+			document.body.removeChild(script)
+		}
+	}, [])
+
+	return (
+		<Router>
+			<div className="bg-stone-50 text-black min-h-screen pt-96">
+				<Navbar sticky />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/faq" element={<FAQ />} />
+					<Route path="/vendors" element={<Vendors />} />
+					<Route path="/contact" element={<Contact />} />
+				</Routes>
+			</div>
+		</Router>
+	)
 }
 
 export default App
