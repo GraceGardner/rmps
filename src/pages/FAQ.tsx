@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import { useState } from "react"
 import type { FC } from "react"
 import Chevron from "../assets/chevron.svg"
 

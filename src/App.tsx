@@ -1,5 +1,5 @@
-import React, { useEffect } from "react"
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
+import { useEffect } from "react"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import type { FC } from "react"
 import Nav from "./components/navigation"
 import Home from "./pages/Home"

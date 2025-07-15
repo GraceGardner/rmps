@@ -1,5 +1,3 @@
-import React from "react"
-import Button from "./button"
 import FbIcon from "../assets/fb-white.svg"
 import InstaIcon from "../assets/ig-wht.svg"
 
