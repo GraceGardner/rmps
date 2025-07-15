@@ -2,9 +2,9 @@ import React from "react"
 
 const About: React.FC = () => {
 	return (
-		<main className="bg-white text-black min-h-screen pt-32 sm:pt-48 px-6">
-			<section className="max-w-3xl mx-auto text-center">
-				<h1 className="text-4xl font-light tracking-widest mb-6">
+		<main className="bg-stone-50 text-black min-h-screen pb-24 pt-32 px-4 sm:pt-96">
+			<section className="container mx-auto max-w-4xl text-center">
+				<h1 className="text-4xl font-bold my-8">
 					About the Rocky Mountain Plant Show
 				</h1>
 				<hr className="border-t-2 border-black w-24 mx-auto mb-8" />
