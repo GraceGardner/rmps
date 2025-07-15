@@ -1,15 +1,15 @@
 import React from "react"
 
-import te from "../assets/vendors/te.jpg"
-import ccc from "../assets/vendors/ccc.jpg"
-import dmsg from "../assets/vendors/dmsg-1.png"
-import ff from "../assets/vendors/ff.png"
-import frg from "../assets/vendors/frg.jpg"
-import lwp from "../assets/vendors/lwp.jpg"
-import mike from "../assets/vendors/mike.png"
-import tbp from "../assets/vendors/tbp.jpg"
-import tfsa from "../assets/vendors/tfsa.jpg"
-import rps from "../assets/vendors/rps.jpg"
+import te from "$vendors/te.jpg"
+import ccc from "$vendors/ccc.jpg"
+import dmsg from "$vendors/dmsg-1.png"
+import ff from "$vendors/ff.png"
+import frg from "$vendors/frg.jpg"
+import lwp from "$vendors/lwp.jpg"
+import mike from "$vendors/mike.png"
+import tbp from "$vendors/tbp.jpg"
+import tfsa from "$vendors/tfsa.jpg"
+import rps from "$vendors/rps.jpg"
 
 type Vendor = {
 	name: string
