@@ -2,7 +2,7 @@ import React from "react"
 
 const Contact: React.FC = () => {
 	return (
-		<main className="bg-white text-black min-h-screen p-6 pt-32">
+		<main className="bg-white text-black min-h-screen p-6 pt-32 sm:pt-96">
 			<h1 className="text-4xl font-bold mb-8 text-center">Contact Us</h1>
 			<div className="max-w-xl mx-auto">
 				<p className="text-lg mb-6">

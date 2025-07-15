@@ -16,9 +16,9 @@ const Home: React.FC = () => {
 	}
 
 	return (
-		<div className="bg-stone-50 text-black min-h-screen py-24 px-4 pt-96">
+		<div className="bg-stone-50 text-black min-h-screen pb-24 pt-32 px-4 sm:pt-96">
 			<div className="container mx-auto max-w-4xl text-center">
-				<h1 className="text-4xl font-bold text-black uppercase pt-10">
+				<h1 className="text-4xl font-bold my-8">
 					The best plant event of the summer is back!
 				</h1>
 				<h2 className="text-3xl uppercase my-6">July 19th & 20th, 2025</h2>

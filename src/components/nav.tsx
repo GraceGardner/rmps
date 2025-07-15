@@ -2,12 +2,7 @@ import React, { useEffect, useState } from "react"
 import Logo from "../assets/logo.png"
 import Bannar from "./bannar"
 
-type NavItem = {
-	label: string
-	href: string
-}
-
-const navItems: NavItem[] = [
+const navItems = [
 	{ label: "Home", href: "/" },
 	{ label: "About", href: "/about" },
 	{ label: "Contact", href: "/contact" },
@@ -15,7 +10,7 @@ const navItems: NavItem[] = [
 	{ label: "FAQ", href: "/faq" },
 ]
 
-const Navbar: React.FC<{ sticky?: boolean }> = ({ sticky }) => {
+const DesktopNavbar: React.FC<{ sticky?: boolean }> = ({ sticky }) => {
 	const [scrolled, setScrolled] = useState(false)
 
 	useEffect(() => {
@@ -56,6 +51,7 @@ const Navbar: React.FC<{ sticky?: boolean }> = ({ sticky }) => {
 						scrolled ? "w-full mt-0" : "mt-4 w-1/2"
 					}`}
 				/>
+
 				<div className="w-full text-center">
 					<nav className="space-x-14 uppercase tracking-widest font-light text-lg">
 						{navItems.map((item) => (
@@ -74,4 +70,4 @@ const Navbar: React.FC<{ sticky?: boolean }> = ({ sticky }) => {
 	)
 }
 
-export default Navbar
+export default DesktopNavbar

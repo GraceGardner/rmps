@@ -1,11 +1,13 @@
 import React, { useEffect } from "react"
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 import type { FC } from "react"
-import Navbar from "./components/nav"
+import Nav from "./components/navigation"
 import Home from "./pages/Home"
 import FAQ from "./pages/FAQ"
 import Vendors from "./pages/Vendors"
 import Contact from "./pages/Contact"
+import About from "./pages/About"
+import Footer from "./components/footer"
 
 const App: FC = () => {
 	useEffect(() => {
@@ -21,14 +23,16 @@ const App: FC = () => {
 
 	return (
 		<Router>
-			<div className="bg-stone-50 text-black min-h-screen pt-96">
-				<Navbar sticky />
+			<div className="bg-stone-50 text-black min-h-screen">
+				<Nav />
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/faq" element={<FAQ />} />
 					<Route path="/vendors" element={<Vendors />} />
 					<Route path="/contact" element={<Contact />} />
+					<Route path="/about" element={<About />} />
 				</Routes>
+				<Footer />
 			</div>
 		</Router>
 	)

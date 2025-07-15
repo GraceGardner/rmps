@@ -53,7 +53,7 @@ const FAQ: FC = () => {
 	}
 
 	return (
-		<main className="bg-white text-black min-h-screen p-6 pt-96">
+		<main className="bg-white text-black min-h-screen p-6 pt-32 sm:pt-96">
 			<h1 className="text-4xl font-bold my-8">Frequently Asked Questions</h1>
 			<div className="space-y-2">
 				{faqs.map((faq, index) => (
