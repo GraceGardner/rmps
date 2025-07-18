@@ -17,7 +17,7 @@ const FAQ: FC = () => {
 		{
 			question: "Where should I park?",
 			answer:
-				"There is limited parking available at the venue. Overflow parking if available at the nearby church.",
+				"There is limited parking available at the venue. Overflow parking is available at the nearby church and along the street. Please avoid parking in hotel parking lots",
 		},
 		{
 			question: "Do I need to buy tickets in advance?",
@@ -35,9 +35,9 @@ const FAQ: FC = () => {
 				"Yes! We welcome plant lovers of all ages. If you're looking for the best time to come with your family, we highly recommend considering times outside of peak hours. Normally this would be mid-day - the end of the even on Saturday or anytime on Sunday.",
 		},
 		{
-			question: "Is the event family-friendly?",
+			question: "Is there a less busy time to come? ",
 			answer:
-				"If you're looking for the best time to come with your family, we highly recommend considering times outside of peak hours. Normally this would be mid-day - the end of the even on Saturday or anytime on Sunday.",
+				"If you're looking to avoid the crowds, we highly recommend considering times outside of peak hours. Normally this would be mid-day - the end of the event on Saturday or anytime on Sunday. Please also consider the VIP pass if still available to come before the peak hours.",
 		},
 		{
 			question: "Is haggling allowed?",
